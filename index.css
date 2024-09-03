@@ -1,0 +1,142 @@
+:root {
+    --main-background: #F4F4F4;
+    --main-div-background: #FFF;
+    --main-h2-color: #5A537B;
+    --main-p-color: #353535;
+    --theme-button-background: #353535;
+    --theme-svg-color: #F4F4F4;
+}
+
+[theme='light'] {
+    --main-background: #1F2937;
+    --main-div-background: #273549;
+    --main-h2-color: #CCC1FF;
+    --main-p-color: #fff;
+    --theme-button-background: #CCC1FF;
+    --theme-svg-color: #1F2937;
+}
+
+* {
+    min-width: 0;
+    font: inherit
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+img,
+video,
+svg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+svg {
+    color: var(--theme-svg-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100dvh;
+    font-family: 'Inter';
+}
+
+h1,
+h2 {
+    margin: 0;
+    text-wrap: balance;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+section {
+    background-color: #6943FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 30px 50px;
+}
+
+section input {
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #b295ff;
+    color: #fff;
+    font-size: 5.8rem;
+    width: 114px;
+    max-width: 200px;
+    background-color: #6943FF;
+    margin: 30px 0;
+    padding: 4px 18px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+section button:first-of-type {
+    margin-bottom: 24px;
+    background-color: var(--theme-button-background);
+}
+
+section button {
+    font-size: 1.6rem;
+    border-radius: 5px;
+    padding: 9px 28px;
+    border: none;
+    color: #3D3D3D;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-background);
+    gap: 25px;
+    padding: 36px 25px;
+}
+
+main div {
+    background-color: var(--main-div-background);
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main div h2 {
+    font-size: 2rem;
+    color: var(--main-h2-color);
+    font-weight: 600;
+}
+
+main div p {
+    font-size: 1.4rem;
+    color: var(--main-p-color);
+}
